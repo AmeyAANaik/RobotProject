@@ -1,0 +1,34 @@
+
+1.  No. Project is in progress. We will Test  
+                                  1. By Generating programs using AST 
+
+2. i)  Currently RoboInterpreter ,GridInterpreter model  are using ForkIO.
+       We want to shift it to distributed process model. 
+   ii) In GridInterpreter , grid cell should hold partial function and robot can put partial function in cell.
+   ii) For UI , another language to represent Robot Object .
+
+3.  Modules in Project :- 
+   i) RoboInterpreter :- It parses RoboLanguage , interprete language by communicating with gridInterpreter.
+   ii) GridInterpreter :- It initializes Grid  and spown RoboInterpreter. It updates RoboState in Grid. 
+   iii) UICommunicator :- It generate UI stream .  WebSocket Server  which interfaces GridInterpreterr and UI (in browser).
+   iv)  UIServer :- It is WebSocket Server  which interfaces UICommunicator and UI (in browser).
+   iv) UI (in browser) :- It render stream input from UIServer on browser.
+
+4. No. 
+
+5. i) WebSocketServer is service .interfaces are 1) Connect
+                                                 2) HandleMessage 
+                                                 3) Close
+
+6. NOT tested. 
+
+7. No.
+
+8.
+    1) WorldJson Object Contains GridSize , ListOfRobos.
+        ListOfRobos contain RoboId, progName ,  pos , color.`  
+ 
+    i) exception Handling
+    ii) Dumping partial Function in Grid's Cell memory
+    iii) Robo Interpreter Testing using QuickCheck  by generating Robot Program  
+ 

@@ -1,0 +1,39 @@
+
+
+what the thing are working
+
+1. VariableName = Constant
+
+problems at 
+
+1. y = getmem
+
+2. if we already assigned 
+    x = 10
+   after that we are writing 
+    y = x
+
+3.
+   y = x + 1
+4. 
+   y = 1 + x 
+
+--------------------------------------------------------------------
+Language Features :
+
+1>  setMem( [ Variable / DirectValue ] )
+
+2>  VariableName = getmem
+
+3>  Assignment :
+       VariableName = Constant
+       VariableName = Constant OP VariableName
+       VariableName = VariableName OP Constant 
+
+4> In Same Block There should no redeclaration of Variable
+
+5> recursion should have environment to hold current value of variable  
+
+6> Partial Function Support
+
+

@@ -1,0 +1,50 @@
+
+def main() (void)
+
+{
+        y = 1
+        x = y + 2
+        z = fun(x)
+	if (iswall(up))
+	{
+ 
+		if (iswall(down))
+		{
+                y = 14
+ 		move  ( right ) 
+		}
+		else
+		{
+		move(down)
+		}
+	}
+	else
+	{
+                y = x + 15
+		move(left)
+                n = z(y)
+                m = n(2)
+	}
+		move(up)
+        x = 999
+
+}
+
+def fun(int x,int y,int z) (int)
+{
+	write()
+	move(right)
+	write() 
+	flipPassable()
+	move(down)
+	if(isWall(right))
+	{      
+		return x
+	}
+	else
+	{      x = 3 
+                y = 8
+		fun(x,x,x)
+
+	}
+}
